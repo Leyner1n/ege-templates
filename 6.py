@@ -211,41 +211,138 @@ done()
 # done()
 
 
+# tracer(0)
+# k = 200
+# left(90)
+# screensize(3000, 3000)
+#
+# pd()
+#
+# begin_fill()
+# for i in range(2):
+#     right(60)
+#     forward(7 * k)
+#     right(60)
+# end_fill()
+#
+# pu()
+#
+# counter = 0
+# canvas = getcanvas()
+#
+# for x in range(-150, 150):
+#     for y in range(-150, 150):
+#         if canvas.find_overlapping(x * k, y * k, x * k, y * k) == (5, ):
+#             counter += 1
+#
+# print(counter)
+# done()
+
+
+# tracer(0)
+# k = 100
+# left(90)
+# screensize(5000, 5000)
+#
+# pd()
+# begin_fill()
+#
+# for p in range(3):
+#     forward(10 * k)
+#     right(120)
+#
+# end_fill()
+# pu()
+#
+# c = 0
+# canvas = getcanvas()
+#
+# for x in range(-20, 20):
+#     for y in range(-20, 20):
+#         if canvas.find_overlapping(x * k, y * k, x * k, y * k) == (5, ):
+#             c += 1
+#
+# print(c)
+# done()
+
+
+# k = 30
+# tracer(0)
+# left(90)
+# screensize(5000, 5000)
+#
+# pd()
+#
+#
+# for p in range(2):
+#     forward(6 * k)
+#     right(90)
+#     forward(12 * k)
+#     right(90)
+#
+#
+# pu()
+#
+# back(-2 * k)
+# right(90)
+# forward(9 * k)
+# left(90)
+#
+# pd()
+#
+#
+# for p in range(4):
+#     forward(8 * k)
+#     right(90)
+#
+#
+# pu()
+#
+#
+# canvas = getcanvas()
+#
+# for x in range(-40, 40):
+#     for y in range(-40, 40):
+#         setpos(x * k, y * k)
+#         dot(5)
+#
+# done()
+
+
 tracer(0)
-k = 200
+k = 30
 left(90)
-screensize(3000, 3000)
+screensize(5_000, 5_000)
 
 pd()
 
-begin_fill()
-for i in range(2):
-    right(60)
+for p in range(2):
     forward(7 * k)
-    right(60)
-end_fill()
+    right(90)
+    forward(14 * k)
+    right(90)
 
 pu()
 
-counter = 0
-canvas = getcanvas()
+forward(5 * k)
+right(90)
+forward(-3 * k)
+left(90)
 
-for x in range(-150, 150):
-    for y in range(-150, 150):
-        if canvas.find_overlapping(x * k, y * k, x * k, y * k) == (5, ):
-            counter += 1
+pd()
 
-print(counter)
+for p in range(4):
+    forward(10 * k)
+    left(270)
+
+pu()
+
+for x in range(-40, 40):
+    for y in range(-40, 40):
+        setpos(x * k, y * k)
+        dot(5)
+
 done()
-
-
-
-
-
-
-
-
-
 
 
 
