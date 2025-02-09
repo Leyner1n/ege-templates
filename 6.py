@@ -309,31 +309,69 @@ done()
 # done()
 
 
+# tracer(0)
+# k = 30
+# left(90)
+# screensize(5_000, 5_000)
+#
+# pd()
+#
+# for p in range(2):
+#     forward(7 * k)
+#     right(90)
+#     forward(14 * k)
+#     right(90)
+#
+# pu()
+#
+# forward(5 * k)
+# right(90)
+# forward(-3 * k)
+# left(90)
+#
+# pd()
+#
+# for p in range(4):
+#     forward(10 * k)
+#     left(270)
+#
+# pu()
+#
+# for x in range(-40, 40):
+#     for y in range(-40, 40):
+#         setpos(x * k, y * k)
+#         dot(5)
+#
+# done()
+
+
 tracer(0)
-k = 30
+k = 50
 left(90)
-screensize(5_000, 5_000)
+screensize(5000, 5000)
 
 pd()
 
-for p in range(2):
+for p in range(7):
+    right(90)
     forward(7 * k)
     right(90)
-    forward(14 * k)
-    right(90)
+    forward(6 * k)
 
 pu()
 
-forward(5 * k)
 right(90)
-forward(-3 * k)
-left(90)
+forward(3 * k)
+right(90)
+forward(1 * k)
 
 pd()
 
 for p in range(4):
-    forward(10 * k)
-    left(270)
+    right(90)
+    forward(6 * k)
+    right(90)
+    forward(11 * k)
 
 pu()
 
@@ -343,6 +381,9 @@ for x in range(-40, 40):
         dot(5)
 
 done()
+
+
+
 
 
 
