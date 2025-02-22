@@ -43,7 +43,7 @@ from itertools import *
 
 
 # a = '0123456789'
-# c = 0
+# c = 0 
 #
 # for a1, a2, a3, a4, a5 in product(a, repeat=5):
 #     word1 = a1 + a2 + a3 + a4 + a5
