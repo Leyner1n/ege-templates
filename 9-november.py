@@ -159,23 +159,23 @@ print('===' * 10)
 
 # 19-21
 # ================================================================
-# def f(a, b, m):
-#     if a + b <= 33:
-#         return m % 2 == 0
-#     if m == 0:
-#         return 0
+def f(a, b, m):
+    if a + b <= 33:
+        return m % 2 == 0
+    if m == 0:
+        return 0
     
-#     h = [f(a - 2, b, m - 1), f(a, b - 2, m - 1),]
-#     if a > b:
-#         h.append(f(a // 2 + 1, b, m - 1))
-#     else:
-#         h.append(f(a, b // 2 + 1, m - 1))
+    h = [f(a - 2, b, m - 1), f(a, b - 2, m - 1),]
+    if a > b:
+        h.append(f(a // 2 + 1, b, m - 1))
+    else:
+        h.append(f(a, b // 2 + 1, m - 1))
 
-#     return any(h) if m % 2 != 0 else all(h)
+    return any(h) if m % 2 != 0 else all(h)
 
-# print('19:', [b for b in range(11, 200) if f(23, b, 2)]) # 42
-# print('20:', [b for b in range(11, 200) if not f(23, b, 1) and  f(23, b, 3)]) # 24 46
-# print('21:', [b for b in range(11, 200) if not f(23, b, 2) and f(23, b, 4)]) # 28
+print('19:', [b for b in range(11, 200) if f(23, b, 2)]) # 42
+print('20:', [b for b in range(11, 200) if not f(23, b, 1) and  f(23, b, 3)]) # 24 46
+print('21:', [b for b in range(11, 200) if not f(23, b, 2) and f(23, b, 4)]) # 28
 
 # мои ответы: 
 # 19: с any() == 41
