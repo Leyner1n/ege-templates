@@ -73,8 +73,28 @@ from ipaddress import *
 # num_addresses учитывает кол-во адресов
 
 
-for mask in range(33):
-    net = ip_network(f'175.122.80.13/{mask}', 0)
-    if net.num_addresses >= 60:
-        print(net)  # 7 вариантов маски
+# for mask in range(33):
+#     net = ip_network(f'175.122.80.13/{mask}', 0)
+#     if net.num_addresses >= 60:
+#         print(net)  # 7 вариантов маски
 
+
+# # прототип с поиском номера пк
+# net = ip_network('192.168.156.235/255.255.255.240', 0)
+# # print(net)  # узнали адрес сети (192.168.156.224)
+#
+# ip1 = ip_address('192.168.156.235')
+# ip2 = ip_address('192.168.156.224')
+#
+# print(int(ip1) - int(ip2))  # 11
+
+
+# # задание для подсчета ip адресов кратных какому-то числу
+# counter = 0
+# net = ip_network('0.0.0.0/255.255.128.0', 0)
+#
+# for ip in net:
+#     if int(ip) % 4 == 0:
+#         counter += 1
+#
+# print(counter)  # 8192
