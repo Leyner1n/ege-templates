@@ -103,4 +103,4 @@ def f(start, stop, step):
                 + f(start * 2, stop, step + 1)
                 )
 
-print(f(1, 20, 0))  # 36
+print(f(1, 20, 0))  # 36 
