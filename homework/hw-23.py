@@ -127,5 +127,3 @@ for i in range(31, 100):
     if f(31, i) == 1001:
         print(i)
 
-
-

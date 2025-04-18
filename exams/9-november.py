@@ -84,15 +84,15 @@ print('===' * 10)
 # 9
 # ================================================================
 # counter = 0
-
+#
 # for file in open('./txt/9.txt'):
 #     text = [int(num) for num in file.split()]
 #     answer_1 = [num for num in text if num % 2 == 0]
 #     answer_2 = [num for num in text if num % 2 != 0]
-
+#
 #     if len(answer_1) >= 2 and len(answer_2) >= 2 and 3 * sum(answer_2) > prod(answer_1):
 #         counter += 1
-
+#
 # print(counter) # 160
 # ================================================================
 
