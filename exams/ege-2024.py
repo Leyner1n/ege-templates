@@ -73,7 +73,7 @@ for p in product('КОСУФ', repeat=5):
 
 
 # 9
-file = open('../txt/9-2024.txt')
+file = open('../txt/9/9-2024.txt')
 counter = 0
 
 for f in file:
@@ -140,7 +140,7 @@ print((f(2024) // 16 - f(2023)) // f(2022))
 
 
 # 17
-file = open('../txt/17-2024.txt').read().split()
+file = open('../txt/17/17-2024.txt').read().split()
 a32 = [int(i) for i in file if int(i) % 32 == 0]
 lst = []
 
@@ -179,20 +179,3 @@ def f(s, e):
 
 
 print(f(5, 7) * f(7, 11))
-
-
-# 24
-file = open('../txt/24-2024.txt').read()
-counter = 0
-lst = []
-
-
-file = file.replace('*', '').replace('-', '').replace('0', '')
-for i in range(len(file) - 3):
-
-
-# 11
-for x in range(1, 50):
-    a = (ceil(261 * ceil(log2(x))) / 2) * 252_500
-    if a > 1024 * 31 * 8:
-        print(x)
